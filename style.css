@@ -40,11 +40,6 @@ body {
   background-color: #ff959500;
   overflow-x: hidden;
 }
-/* h1 {font-size: 3rem;} 
-      h2 {font-size: 2rem;}
-      h3 {font-size: 1.8rem;}
-      p {font-size: 1.4rem;}
-      button {font-size: 1.3rem;} */
 
 header {
   margin: 0;
@@ -177,7 +172,6 @@ header i {
 .home-container span {
   color: var(--orange);
   font-family: "Ubuntu";
-  /* display: block; */
 }
 .home-container h1 {
   margin-bottom: 1rem;
@@ -474,7 +468,6 @@ header i {
 .projects-container .btn i {
   margin-right: 12px;
 }
-
 .cards-container {
   display: block;
   background-color: transparent;
@@ -498,31 +491,12 @@ header i {
   clear: both;
   margin: 0.5rem 1.5rem;
 }
-
 .projects-card img {
   width: 98%;
   margin: 1.2rem 1rem;
   border-radius: 1rem;
   box-shadow: 0px 6px 29px rgb(82, 82, 82);
-  /* border:6px solid rgb(180, 180, 180); */
 }
-/* /
-      .projects-image {
-         background-color: var(--grey);
-        object-fit: fill;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-origin: border-box; 
-
-        width: 96%;
-        height: 250px;
-        border-radius: 1rem;
-        margin: 2rem 1rem;
-        padding: 0;
-        box-shadow: 0px 1px 12px var(--blue);
-        /* border: 5px solid var(--light-blue); 
-      /* } */
 .projects-card h3 {
   text-align: left;
   text-transform: capitalize;
@@ -535,17 +509,6 @@ header i {
   display: block;
   text-overflow: clip;
 }
-/* .projects-name {
-        text-align: left;
-        text-transform: capitalize;
-        color: var(--blue);
-        font-size: 3rem;
-        text-shadow: 0px 3px 12px var(--grey);
-        margin-bottom: 1rem;
-        margin-left: 1rem;
-        text-overflow: ellipsis;
-        display: inline-block;
-      } */
 .projects-card p {
   font-size: 1.6rem;
   padding-left: 12px;
@@ -553,9 +516,6 @@ header i {
   color: var(--light-blue);
   text-shadow: 0px 1px 1px var(--grey);
 }
-/* .project-desc::first-letter {
-        font-size: 2rem;
-      } */
 .projects-card a {
   background-color: var(--white);
   color: var(--orange);
@@ -579,74 +539,6 @@ header i {
   margin-right: 12px;
 }
 
-/* .modal {
-        border: none;
-        border-radius: 12px;
-        box-shadow: 0px 0px 6px var(--grey);
-        padding: 1.2rem 0.9rem;
-        margin: 1.5rem 2%;
-        background-color: var(--white);
-        color: var(--blue);
-        height: 70vh;
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        z-index: 99;
-        display: none;
-        transition: all 0.6s ease-in-out;
-      }
-      .modal-container {
-        padding: 2rem 0.5rem;
-        margin: 2rem 1rem;
-        overflow-x: scroll;
-         width: 68vh; 
-
-      }
-     #close {
-        color: var(--blue);
-        font-size: 2.2rem;
-        cursor: pointer;
-        float: right;
-        margin: 0 0.4rem;
-      }
-      .modal h4 {
-        color: var(--blue);
-        font-size: 1.8rem;
-        margin-bottom: 0.7rem;
-      text-shadow: 0px 1px 2px var(--light-blue);
-      }
-      .modal p {
-        color: var(--light-blue);      
-       text-shadow: 0px 1px 2px var(--light-blue);
-      }
-      .modal ul {
-        background-color: var(--light-grey);
-        box-shadow: 0px 5px 15px var(--light-grey);
-        margin: 0.3rem 0;
-        padding:1rem 0.5rem;
-        border-radius: 1rem;
-      }
-      .modal li {
-      list-style-type: none;
-      padding-left: 1.5rem;
-      margin: 0.7rem 0;
-      color: var(--light-blue);
-      text-shadow: 0px 1px 2px var(--light-grey);
-      font-weight: bold;
-
-    }
-      .image-slider  {
-        display: flex;
-        overflow-x: scroll;
-      }
-      .image-slider img {
-        width: 300px; 
-       height: 200px; 
-        border-radius: 1rem;
-        margin: 0 1rem;
-      }
-
- */
 .home,
 .skill-container,
 .projects-container {
@@ -760,61 +652,16 @@ footer {
   margin-left: 6px;
 }
 
-/* skill card animation 
-    .skill-card {
-      animation: 0.8s scrolling-left linear;
-      /* animation-timeline: view(); 
-     animation-range: entry 0% cover 30%; 
-     }
-      @keyframes scrolling-left {
-        from {
-          opacity: 0;
-          scale: 0.4;
-        }
-        to {
-          opacity: 1;
-          scale: 1;
-        }
-      }
-      
-      /* projects cards animation 
-      .projects-card {
-        animation: 0.9s scrolling-right linear;
-        /* animation-timeline: view(); 
-        animation-range: entry 0% cover 25%; 
-      }
-      @keyframes scrolling-right {
-        from {
-          opacity: 0;
-          transform: translateY(50px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0px);        
-        }
-      }
-
-     
-
-
-
-
-
-
-/* Mobile first nam 0px - 575px athara wlata one na. defalut define karanna puluwan. 
-
-large mobile / small tablets wlata @media (min-width: 576px){} 
-tablets wlata @media (min-width: 768px){} 
+/* 
+Mobile first 0px - 575px  
+large mobile / small tablets  @media (min-width: 576px){} 
+tablets  @media (min-width: 768px){} 
 laptop / small desktop @media (min-width: 992px) {}
-large desktop @media(min-width: 1200px) {} */
+large desktop @media(min-width: 1200px) {} 
+*/
 
 /* large mobile / small tablets  */
 @media (min-width: 576px) {
-  body {
-    font-size: 90%;
-    /* background-color: #3776AB;             */
-    background-color: #ff5e00;
-  }
   header {
     padding: 3rem 8%;
   }
@@ -832,7 +679,6 @@ large desktop @media(min-width: 1200px) {} */
   }
   .projects-card {
     margin: 1rem auto;
-    /* padding: 1rem auto; */
   }
   .skill-card {
     margin: 1rem;
@@ -845,9 +691,6 @@ large desktop @media(min-width: 1200px) {} */
 
 /* tablets */
 @media (min-width: 768px) {
-  body {
-    background-color: #3776ab;
-  }
   header {
     padding: 3rem;
   }
@@ -886,14 +729,9 @@ large desktop @media(min-width: 1200px) {} */
     width: 100%;
     margin: 1rem 0;
   }
-
   .contacts {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center; */
   }
   footer {
     padding: 2rem;
@@ -902,11 +740,7 @@ large desktop @media(min-width: 1200px) {} */
 
 /* laptop / samll desktop */
 @media (min-width: 992px) {
-  body {
-    background-color: #751900;
-  }
   header {
-    /* padding: 1rem 20%; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -926,15 +760,10 @@ large desktop @media(min-width: 1200px) {} */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  /* .skill-card p { */
-  /* text-wrap: wrap; */
-  /* } */
+
   .projects-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-column: 3; */
-    /* margin: 1rem; */
-    /* padding: 0.2rem; */
   }
   .projects-card {
     margin: 0.8rem;
@@ -954,7 +783,6 @@ large desktop @media(min-width: 1200px) {} */
 @media (min-width: 1200px) {
   body {
     font-size: 90%;
-    background-color: #f7df1e;
   }
 
   .home,
