@@ -23,16 +23,21 @@ document.addEventListener("click", (e) => {
   }
 });
 
+// copyright year script
 const YEAR = (document.getElementById("year").innerHTML =
   new Date().getFullYear());
 
+// top btn script
 let topBtn = document.getElementById("top-btn");
 window.onscroll = function () {
   scrollFunction();
 };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (
+    document.body.scrollTop > 150 ||
+    document.documentElement.scrollTop > 150
+  ) {
     topBtn.style.display = "block";
   } else {
     topBtn.style.display = "none";
@@ -43,6 +48,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+// calculate My Experience script
 function calculateExperience(startDate) {
   const now = new Date();
 
@@ -61,6 +67,7 @@ function calculateExperience(startDate) {
   }
 }
 
+// my skills starts date store
 const skills = {
   html: new Date("January 01, 2026"),
   css: new Date("February 15, 2026"),
@@ -70,9 +77,9 @@ const skills = {
   problem: new Date("March 02, 2026"),
   react: new Date("March 20, 2026"),
   sass: new Date("March 15, 2026"),
-  bootstrap: new Date("march 25, 2026"),
-  taildwind: new Date("April 01, 2026"),
-  ui: new Date("April 01, 2026"),
+  bootstrap: new Date("March 25, 2026"),
+  taildwind: new Date("March 25, 2026"),
+  ui: new Date("March 25, 2026"),
 };
 for (let skill in skills) {
   document.getElementById(`${skill}-exp`).innerHTML = calculateExperience(
@@ -80,6 +87,7 @@ for (let skill in skills) {
   );
 }
 
+// projects cards create and display
 const project_cards = document.getElementById("projects-cards");
 
 function createProject(img, title, tags, description, githubUrl, liveUrl) {
@@ -135,11 +143,12 @@ function createProject(img, title, tags, description, githubUrl, liveUrl) {
 // Projects array
 const projects = [
   {
-    img: "Assets/cabana-admin-dashboard.png",
+    img: "Assets/info.lanka org.png",
     tags: "HTML, CSS, JS",
-    title: "Cabana Admin Dashboard",
+    title: "Info.Lanka Project",
 
-    description: "Responsive dashboard for managing bookings and guests",
+    description:
+      "A Responsive informationl website designed to showcase key facts, culture and highlights about Sri Lanka. Built with a clean layout and user-friendly navigation for easy browsing.",
     link: {
       github: "https://github.com/lakshan-beast/cabana",
       live: "https://lakshan-beast.github.io/cabana",
@@ -147,11 +156,12 @@ const projects = [
   },
 
   {
-    img: "Assets/cabana-admin-dashboard.png",
+    img: "Assets/educas.png",
     tags: "HTML, CSS, JS",
-    title: "Cabana Admin Dashboard",
+    title: "Educa Project",
 
-    description: "Responsive dashboard for managing bookings and guests",
+    description:
+      "A modern education-themed website designed to present courses, learning resources, and educational information using a sturctured and responsive layout.",
     link: {
       github: "https://github.com/lakshan-beast/cabana",
       live: "https://lakshan-beast.github.io/cabana",
@@ -159,11 +169,12 @@ const projects = [
   },
 
   {
-    img: "Assets/cabana-admin-dashboard.png",
+    img: "Assets/cabana.png",
     tags: "HTML, CSS, JS",
     title: "Cabana Admin Dashboard",
 
-    description: "Responsive dashboard for managing bookings and guests",
+    description:
+      "a modern and responsive landing page desogned for a cabana or resort-style business. The website forces on clean visuals, smooth layout, and an attractive presentation to highlght services and create a relaxing user experince",
     link: {
       github: "https://github.com/lakshan-beast/cabana",
       live: "https://lakshan-beast.github.io/cabana",
@@ -171,40 +182,17 @@ const projects = [
   },
 
   {
-    img: "../files/cabana-card.png",
+    img: "../files/surprise.png",
     tags: "HTML, CSS, JS",
-    title: "Cabana Admin Dashboard",
+    title: "Surprise Project",
 
-    description: "Responsive dashboard for managing bookings and guests",
+    description:
+      "A small interactive web project built with JavaScript creates a fun and engaging user experience through dynamic elements and simple animations.",
     link: {
       github: "https://github.com/lakshan-beast/cabana",
       live: "https://lakshan-beast.github.io/cabana",
     },
   },
-
-  // {
-  //   img: '../files/cabana-card.png',
-  //   tags: 'HTML, CSS, JS',
-  //   title: 'Cabana Admin Dashboard',
-
-  //   description: 'Responsive dashboard for managing bookings and guests',
-  //   link: {
-  //     github: 'https://github.com/lakshan-beast/cabana',
-  //     live: 'https://lakshan-beast.github.io/cabana'
-  //   }
-  // },
-
-  // {
-  //   img: '../files/cabana-card.png',
-  //   tags: 'HTML, CSS, JS',
-  //   title: 'Cabana Admin Dashboard',
-
-  //   description: 'Responsive dashboard for managing bookings and guests',
-  //   link: {
-  //     github: 'https://github.com/lakshan-beast/cabana',
-  //     live: 'https://lakshan-beast.github.io/cabana'
-  //   }
-  // }
 ];
 
 // Loop through projects array & create cards

@@ -19,7 +19,7 @@
   box-sizing: border-box;
   border: none;
   outline: none;
-  font-family: "Ubuntu", "fauna one", "sans-serif";
+  font-family: "Ubuntu", "sans-serif";
   text-decoration: none;
   transition:
     color 0.3s ease,
@@ -27,15 +27,16 @@
 
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
+  /* outline: 2px solid red; */
 }
 
 html {
   font-size: 65%;
-  width: 100%;
+  /* width: 50%; */
   background-color: var(--blue);
 }
 body {
-  width: 100%;
+  /* width: 100%; */
   color: var(--grey);
   background-color: #ff959500;
   overflow-x: hidden;
@@ -93,7 +94,7 @@ header i {
   display: none;
   position: absolute;
   z-index: 99;
-  right: 0;
+  left: 0;
   width: 100%;
   height: auto;
   background-color: rgba(206, 206, 206, 0.733);
@@ -106,8 +107,8 @@ header i {
 .bars-links a {
   display: block;
   padding: 0.7rem;
-  margin: 0.7rem 1.5rem;
-  font-size: 2.2rem;
+  margin: 1.5rem;
+  font-size: 2.5rem;
   color: var(--white);
   border-radius: 6px;
 }
@@ -164,7 +165,7 @@ header i {
 
 .home-container {
   margin: 0;
-  padding: 2rem 5%;
+  padding: 2rem 2%;
   font-size: 1.4rem;
   font-family: "Rubik";
   line-height: 1.2;
@@ -209,7 +210,7 @@ header i {
   width: 45px;
   height: 45px;
   box-shadow: 0px 1px 1px var(--grey);
-  box-shadow: 0px 1px 6px var(--grey) inset;
+  /* box-shadow: 0px 1px 6px var(--grey) inset; */
   border-radius: 50%;
 
   display: flex;
@@ -291,7 +292,7 @@ header i {
   color: var(--grey);
   text-align: left;
   font-size: 2.5rem;
-  margin: 1rem 0rem 0 3rem;
+  margin: 1rem 0rem 1rem 3rem;
 }
 .learn-card h3 {
   color: var(--grey);
@@ -301,8 +302,8 @@ header i {
 }
 .learn-links {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
 }
 .learn-links a {
@@ -338,6 +339,7 @@ header i {
   border-radius: 1rem;
   box-shadow: 0px 1px 12px var(--grey);
   width: 95%;
+  /* height: stretch; */
 }
 
 .skill-card h3 {
@@ -450,10 +452,11 @@ header i {
   }
 }
 
-.projects-container {
+.projects-container,
+.contacts-section {
   display: block;
   padding: 1rem 2%;
-  margin: 1rem 0.3rem;
+  margin: 1rem 0.5rem;
   background-color: transparent;
 }
 .projects-container .btn {
@@ -492,8 +495,8 @@ header i {
   margin: 0.5rem 1.5rem;
 }
 .projects-card img {
-  width: 98%;
-  margin: 1.2rem 1rem;
+  width: 100%;
+  margin: 1.2rem 0rem;
   border-radius: 1rem;
   box-shadow: 0px 6px 29px rgb(82, 82, 82);
 }
@@ -541,8 +544,10 @@ header i {
 
 .home,
 .skill-container,
-.projects-container {
+.projects-container,
+.contacts-section {
   padding: 1rem;
+  margin: 1rem 0;
 }
 
 .information {
@@ -555,7 +560,7 @@ header i {
   padding: 1rem;
 }
 .info-part {
-  margin: 2rem 5rem;
+  /* margin: 2rem 5rem; */
   padding: 1rem 0.6rem;
   background-color: rgba(253, 253, 253, 0.09);
   border-radius: 0.8rem;
@@ -628,8 +633,8 @@ footer {
 .footer-content a {
   color: var(--grey);
   font-size: 2.8rem;
-  padding: 6px;
-  margin: 0.6rem 0.3rem;
+  padding: 0 8px;
+  margin: 0.3rem 0.6rem;
 }
 .footer-content a:hover {
   color: var(--orange);
@@ -639,7 +644,7 @@ footer {
   background-color: var(--orange);
   color: var(--white);
   border-radius: 4px;
-  padding: 0.6rem 1rem;
+  padding: 1rem;
   border: none;
   outline: none;
   position: fixed;
@@ -647,9 +652,11 @@ footer {
   right: 30px;
   z-index: 99;
   cursor: pointer;
+  width: 100px;
+  display: none;
 }
 #top-btn i {
-  margin-left: 6px;
+  margin-left: 1rem;
 }
 
 /* 
@@ -672,7 +679,7 @@ large desktop @media(min-width: 1200px) {}
     flex-direction: column;
   }
 
-  .projects-container,
+  /* .projects-container,
   .skill-container {
     padding: 2rem 1rem;
     margin: 0;
@@ -686,7 +693,7 @@ large desktop @media(min-width: 1200px) {}
   }
   .contacts {
     margin: 0 5rem;
-  }
+  } */
 }
 
 /* tablets */
@@ -694,7 +701,11 @@ large desktop @media(min-width: 1200px) {}
   header {
     padding: 3rem;
   }
-
+  body {
+    overflow-x: hidden;
+    /* margin: 1rem; */
+    /* background-color: #f7df1e; */
+  }
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -708,30 +719,42 @@ large desktop @media(min-width: 1200px) {}
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
   }
   .home .skill-container,
-  .projects-container {
-    padding: 5%;
+  .projects-container,
+  .contact-container {
+    padding: 2rem 10%;
     background: transparent;
   }
 
   .skill-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    align-items: stretch;
+    justify-items: center;
   }
   .projects-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem 2rem;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: stretch;
+    justify-items: center;
+    gap: 0.5rem;
   }
   .projects-card img {
     width: 100%;
-    margin: 1rem 0;
+    margin: 2rem 0;
   }
   .contacts {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .learn-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
   footer {
     padding: 2rem;
@@ -747,7 +770,8 @@ large desktop @media(min-width: 1200px) {}
   }
   .home,
   .skill-container,
-  .projects-container {
+  .projects-container,
+  .contact-container {
     padding: 1rem;
     margin: 1rem 15%;
   }
@@ -759,17 +783,29 @@ large desktop @media(min-width: 1200px) {}
   .skill-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+    justify-items: center;
+  }
+  .skill-card {
+    /* height: 150px; */
+    /* padding: 2rem 1rem; */
   }
 
   .projects-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   .projects-card {
     margin: 0.8rem;
   }
   .modal {
     width: 40%;
+  }
+  .learn-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   footer {
     display: flex;
@@ -792,10 +828,15 @@ large desktop @media(min-width: 1200px) {}
     padding: 2rem 9%;
     margin: 1rem;
   }
-  .skill-cards,
-  .projects-cards {
+  .skill-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    margin: 1rem;
+    padding: 1.2rem;
+  }
+  .projects-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     margin: 1rem;
     padding: 1.2rem;
   }
