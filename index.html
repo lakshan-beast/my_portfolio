@@ -35,47 +35,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- custom css file link -->
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="new style.css" />
 
+    <!-- font-awesome cdn link  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
   </head>
 
   <body>
-    <header>
+    <!-- <header>
       <a href="#" class="header-logo">Lakshan</a>
       <div class="navbar">
-        <a href="#home">Home</a>
-        <a href="#skill">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contacts">Contacts</a>
+        <a href="#home-container">Home</a>
+        <a href="#skill-container">Skills</a>
+        <a href="#projects-container">Projects</a>
+        <a href="#contact-container">Contacts</a>
       </div>
       <div class="more-btn" id="more-btn">
         <i class="fa-solid fa-bars-staggered"></i>
       </div>
+    </header> -->
+
+    <!-- <div class="bars-links" id="bars-links">
+      <a href="#home-container">Home</a>
+      <a href="#skill-container">Skills</a>
+      <a href="#projects-container">Projects</a>
+      <a href="#contact-container">Contacts</a>
+    </div> -->
+
+    <!-- header section start  -->
+    <header id="header" class="header-section">
+      <nav class="header">
+        <i
+          class="fa-solid fa-bars-staggered menu-btn"
+          title="Menu"
+          id="menu-btn"></i>
+        <a href="#home" class="header-logo"
+          ><i class="fa-solid fa-code"></i> Lakshan<span>.</span></a
+        >
+
+        <div class="header-navbar" id="header-navbar">
+          <a href="#resources">Resources</a>
+          <a href="#classes">Classes</a>
+          <a href="#teachers">Teachers</a>
+          <a href="#about">About us</a>
+          <a href="#contacts">Contact us</a>
+
+          <div class="header-copyrights">
+            <a href="#home" class="header-logo"
+              ><i class="fa-regular fa-circle"></i> educa<span>.</span></a
+            >
+            <p><i class="fa-solid fa-rocket"></i>Version 1.0</p>
+            <p>
+              <i class="fa-regular fa-copyright"></i>
+              <span id="year"></span> All rights reserved.
+            </p>
+            <p>
+              This template is made with <i class="fa-solid fa-heart"></i> by
+              <a
+                href="http://github.com/lakshan-beast"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Lakshan</a
+              >
+            </p>
+          </div>
+        </div>
+      </nav>
     </header>
+    <!-- header section end -->
 
-    <div class="bars-links" id="bars-links">
-      <a href="#home">Home</a>
-      <a href="#skill">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contacts">Contacts</a>
-    </div>
+    <div class="overlay"></div>
 
-    <main class="home" id="home">
-      <div class="home-img">
-        <img src="Assets\portfolio-logo.jpg" alt="portfolio logo" />
+    <main class="home-container" id="home-container">
+      <div class="home-image">
+        <img src="Assets/image 02.jpeg" alt="portfolio logo" />
       </div>
 
-      <div class="home-container">
-        <h1>Hi, it's <span>Lakshan</span></h1>
-        <h2 id="typing-text" class="typing-text">I'm a <span></span></h2>
+      <div class="home-content">
+        <h1>Hi, I'm <span>Lakshan</span></h1>
+        <h2 id="typing-text" class="typing-text"><span></span></h2>
         <p>
-          I am a self-taught Frontend Developer focused on building real-world,
-          responsive web applications using HTML, CSS, and JavaScript. I enjoy
-          creating clean, modern, and user-friendly digital experiences that
-          solve practical problems.
+          I am a passionate Frontend Developer specializing in creating modern,
+          responsive, and user-friendly web applications. I turn ideas into
+          digital experiences using HTML, CSS, JavaScript, and React, focusing
+          on clean code, performance, and intuitive design.
         </p>
 
         <div id="social-icons" class="social-icons">
@@ -101,12 +147,15 @@
           <a href="#contacts" class="btn">
             <span>Contact me</span>
           </a>
+          <a href="#projects-container" class="btn">
+            <span>View Projects</span>
+          </a>
         </div>
       </div>
     </main>
 
     <section>
-      <div class="skill-container" id="skill">
+      <div class="skill-container" id="skill-container">
         <h2>Skills</h2>
 
         <h3>Frontend Development</h3>
@@ -122,8 +171,8 @@
           <div class="skill-card">
             <p class="times"><span id="css-exp"></span></p>
             <h3><i class="fa-brands fa-css3-alt"></i>CSS3</h3>
-            <p>Flexbox / Grid Layout</p>
-            <p>Responsive Design</p>
+            <p>Flexbox/Grid layouts</p>
+            <p>Responsive and Modern styling</p>
           </div>
           <!-- skill card div end -->
 
@@ -131,36 +180,36 @@
             <p class="times"><span id="js-exp"></span></p>
             <h3><i class="fa-brands fa-js-square"></i>JavaScript</h3>
             <p>DOM Manipulation</p>
-            <p>Events / ES6+</p>
+            <p>Event Handling / ES6+</p>
           </div>
           <!-- skill card div end -->
 
           <div class="skill-card">
             <p class="times"><span id="react-exp"></span></p>
             <h3><i class="fa-brands fa-react"></i>React.js</h3>
-            <p>Components</p>
-            <p>Hooks / State Management</p>
+            <p>Component-based architecture</p>
+            <p>State Management, Hooks</p>
           </div>
           <!-- skill card div end -->
 
           <div class="skill-card">
             <p class="times"><span id="bootstrap-exp"></span></p>
             <h3><i class="fa-brands fa-bootstrap"></i>Bootstrap</h3>
-            <p>Responsive UI Framework</p>
+            <p>Responsive UI framework for rapid development</p>
           </div>
           <!-- skill card div end -->
 
           <div class="skill-card">
             <p class="times"><span id="sass-exp"></span></p>
             <h3><i class="fa-brands fa-sass"></i>Sass</h3>
-            <p>SCSS Preprocessor</p>
+            <p>SCSS preprocessor for maintainable CSS</p>
           </div>
           <!-- skill card div end -->
 
           <div class="skill-card">
             <p class="times"><span id="taildwind-exp"></span></p>
             <h3><i class="fa-solid fa-wind"></i>Tailwind CSS</h3>
-            <p>Utility-First Styling</p>
+            <p>Utility-first, modern styling</p>
           </div>
           <!-- skill card div end -->
         </div>
@@ -170,7 +219,7 @@
           <div class="skill-card">
             <p class="times"><span id="git-exp"></span></p>
             <h3><i class="fa-brands fa-git-alt github"></i>Git</h3>
-            <p>Branching</p>
+            <p>Branching, collaborative workflow</p>
             <p>Version Control</p>
           </div>
           <!-- skill card div end -->
@@ -179,7 +228,7 @@
             <p class="times"><span id="github-exp"></span></p>
             <h3><i class="fa-brands fa-github github"></i>Github</h3>
             <p>Repository Management</p>
-            <p>Deployment</p>
+            <p>Deployment, Code collaboration</p>
           </div>
           <!-- skill card div end -->
         </div>
@@ -208,23 +257,22 @@
         </div>
       </div>
 
-      <div class="projects-container" id="projects">
+      <div class="projects-container" id="projects-container">
         <h2>My Real World Projects</h2>
 
         <div class="cards-container">
           <div class="projects-cards" id="projects-cards"></div>
         </div>
       </div>
-    </section>
 
-    <section>
-      <div class="contact-container">
-        <div class="contacts" id="contacts">
-          <div class="contact-me info-part">
+      <div class="contact-container" id="contact-container">
+        <div class="contacts-content" id="contacts-content">
+          <div class="contact-me contact-card">
             <h2>Let's Connect</h2>
             <p>
-              I'm currently available for freelance and remote opportunities.
-              Feel free to reach out if you'd like to collaborate.
+              I am currently open to freelance and remote opportunities. If you
+              have a project in mind or want to collaborate, feel free to get in
+              touch!
             </p>
 
             <div class="contact-methods">
@@ -247,19 +295,21 @@
             </div>
           </div>
 
-          <div class="about-me info-part">
+          <div class="about-me contact-card">
             <h2>About me</h2>
             <p>
-              Hi, I'm <b>Lakshan</b>, a passionate Frontend Developer
-              specializing in modern, responsive web applications using HTML,
-              CSS, and JavaScript. I focus on writing clean, maintainable code
-              and creating intuitive user experiences.
+              Hello! I'm <strong>Lakshan</strong>, a Frontend Developer who
+              transforms concepts into seamless, responsive web experiences.
+              With expertise in HTML, CSS, JavaScript, and React, I build
+              websites, landing pages, dashboards, and small business platforms
+              that are visually appealing, performance-optimized, and
+              mobile-friendly.
             </p>
 
             <p>
-              I build portfolio websites, landing pages, dashboards, and small
-              business websites that are modern, performance-optimized, and
-              mobile-friendly.
+              I provide services including website redesigns, UI/UX
+              improvements, bug fixes, and front-end enhancements to ensure
+              websites are fast, functional, and user-centric.
             </p>
 
             <p>
@@ -268,46 +318,54 @@
             </p>
 
             <p>
-              My goal is to deliver high-quality work, maintain clear
-              communication, and complete projects on time to ensure client
-              satisfaction.
+              My goal is to deliver high-quality solutions, communicate clearly
+              with clients, and complete projects efficiently, ensuring every
+              project exceeds expectations.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <button id="top-btn" title="Go to Top" onclick="topFunction()">
+    <!-- <button
+      type="button"
+      id="top-btn"
+      title="Go to Top"
+      onclick="topFunction()">
       Top <span><i class="fa-solid fa-arrow-up"></i></span>
-    </button>
+    </button> -->
 
     <footer>
-      <div class="footer-top footer-part">
+      <div class="footer-top footer-card">
         <h2>Lakshan</h2>
         <p>Frontend Developer</p>
       </div>
 
-      <div class="footer-content footer-part">
-        <a href="https://www.linkedin.com/in/lakshan-sandeepa" title="Linkedin">
+      <div class="footer-content footer-card">
+        <a
+          href="https://www.linkedin.com/in/lakshan-sandeepa"
+          title="Follow me in Linkedin">
           <i class="fa-brands fa-linkedin"></i>
         </a>
-        <a href="https://github.com/lakshan-beast" title="Github">
+        <a href="https://github.com/lakshan-beast" title="Follow me in Github">
           <i class="fa-brands fa-github"></i>
         </a>
-        <a href="https://x.com/lakshan_beast" title="X">
+        <a href="https://x.com/lakshan_beast" title="Follow me in X">
           <i class="fa-brands fa-x"></i>
         </a>
         <a
           href="https://www.freelancer.com/u/Laxzan35?frm=Laxzan35&sb=t"
-          title="Freelance">
+          title="Follow me in Freelance">
           <i class="fa-solid fa-briefcase"></i>
         </a>
-        <a href="mailto:lakshansandeepa0305@gmail.com" title="Email">
+        <a
+          href="mailto:lakshansandeepa0305@gmail.com"
+          title="Follow me in Email">
           <i class="fa-regular fa-envelope"></i>
         </a>
       </div>
 
-      <div class="footer-bottom footer-part">
+      <div class="footer-bottom footer-card">
         <p>
           <i class="fa-regular fa-copyright"></i>
           <span id="year"></span>
