@@ -26,9 +26,9 @@ This is my personal portfolio website created to showcase my frontend developmen
 - Cabana Landing Page
 - Surprise Project
 
-## Live Demo
+<!-- ## Live Demo
 
-('http://lakshansandeepa.dev/')
+('http://lakshansandeepa.dev/') -->
 
 ## Project Purpose
 

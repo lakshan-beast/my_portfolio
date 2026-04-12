@@ -1,3 +1,27 @@
+// slider
+let sliderIndex = 0;
+const statsSlides = document.querySelector(".stats-slides");
+const totalStats = document.querySelectorAll(".slides-para").length;
+
+setInterval(() => {
+  sliderIndex++;
+  if (sliderIndex >= totalStats) sliderIndex = 0;
+  // statsSlides.style.transform = `translateX(-${sliderIndex * 100}%)`;
+}, 3000);
+
+// header sticky
+const header = document.getElementById("header");
+const navbar = document.getElementById("header-navbar");
+
+window.addEventListener("scroll", function () {
+  const scrolled = window.scrollY > 50;
+  header.classList.toggle("scrolled", scrolled);
+  navbar.classList.toggle("scrolled", scrolled);
+
+  header.classList.toggle("transparent", !scrolled);
+  navbar.classList.toggle("transparent", !scrolled);
+});
+
 const bar_links = document.getElementById("bars-links");
 const more_btns = document.getElementById("more-btn");
 const icon = more_btns.querySelector("i");
@@ -142,6 +166,7 @@ function createProject(img, title, tags, description, githubUrl, liveUrl) {
 
 // Projects array
 const projects = [
+  // info.lanka Project
   {
     img: "Assets/info.lanka org.png",
     tags: "HTML, CSS, JS",
@@ -154,11 +179,11 @@ const projects = [
       live: "https://lakshan-beast.github.io/cabana",
     },
   },
-
+  // educa project
   {
     img: "Assets/educas.png",
     tags: "HTML, CSS, JS",
-    title: "Educa Project",
+    title: "Educa Web Portal",
 
     description:
       "A modern education-themed website designed to present courses, learning resources, and educational information using a sturctured and responsive layout.",
@@ -167,7 +192,7 @@ const projects = [
       live: "https://lakshan-beast.github.io/cabana",
     },
   },
-
+  // cabana admin
   {
     img: "Assets/cabana.png",
     tags: "HTML, CSS, JS",
@@ -180,7 +205,7 @@ const projects = [
       live: "https://lakshan-beast.github.io/cabana",
     },
   },
-
+  // surorise
   {
     img: "../files/surprise.png",
     tags: "HTML, CSS, JS",
